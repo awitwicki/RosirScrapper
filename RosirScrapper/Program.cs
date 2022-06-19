@@ -15,7 +15,7 @@ while (true)
             Console.WriteLine(peopleCount);
 
             // Send to influx
-            string query = $"iot,room=rosir,device=api,sensor=count_people {peopleCount}";
+            string query = $"iot,room=rosir,device=api,sensor=count_people count_people={peopleCount}";
 
             new Task(() =>
             {
