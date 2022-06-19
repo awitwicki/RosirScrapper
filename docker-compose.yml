@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  rosirscrapper:
+    image: ${DOCKER_REGISTRY-}rosirscrapper
+    build:
+      context: .
+      dockerfile: RosirScrapper/Dockerfile
