@@ -6,3 +6,4 @@ services:
     build:
       context: .
       dockerfile: RosirScrapper/Dockerfile
+    network_mode: host
